@@ -1,0 +1,35 @@
+
+
+.video{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.play_pause{
+margin-top: 15%;
+width: 150px;
+height: 150px;
+padding: 40px;
+cursor: pointer;
+}
+.play_pause .play,
+.play_pause .pause{
+display: none;
+}
+.play.active{
+display: inline;
+}
+.pause.active{
+display: inline;
+}
+svg{
+fill: #fff;
+}
+

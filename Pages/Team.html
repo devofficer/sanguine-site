@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .owl-stage-outer {
+        top: 0;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+      }
+      .item {
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        background-color: transparent;
+        position: relative;
+      }
+
+      .item:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .item:hover .item-desc {
+        display: flex;
+      }
+
+      #con .owl-carousel .item {
+        margin: 0;
+        padding: 0;
+      }
+      .owl-carousel .owl-item img {
+        display: block;
+        width: 20vw;
+      }
+
+      .item-desc {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0px;
+        padding: 25px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .item-desc p {
+        color: white;
+        font-size: 1.5vw;
+        line-height: 1.8vw;
+        text-shadow: 1px 1px black;
+      }
+
+      .item-email {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .item-email a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .item-email a:hover {
+        color: gray;
+      }
+
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/Spot_Leukaemia.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../javascript/app.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="../assets/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link rel="shortcut icon" href="../assets/ico/favicon.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="../assets/vendors/jquery.min.js"></script>
+    <script src="../assets/owlcarousel/owl.carousel.js"></script>
+
+    <title>Our Team</title>
+  </head>
+  <body>
+    <nav style="z-index: 999999">
+      <img src="../src/SANGUINE LOGO WHITE.svg" alt="" class="logo" />
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../Work/work.html">WORK</a></li>
+        <li><a style="font-weight: bold" href="../Pages/Team.html">TEAM</a></li>
+        <li><a href="../Pages/about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <section id="con">
+      <div class="row" style="position: relative; z-index: 99999">
+        <div class="large-12 columns">
+          <div class="owl-carousel">
+            <div class="item">
+              <img src="../src/ABOUT/Raphael.png" />
+              <div class="item-desc">
+                <p><b>Raphael Stone</b></p>
+                <p>Co-Founder</p>
+                <p class="item-email">
+                  <span>Creative Director</span> 
+                  <a href="mailto:raphael@sanguineagency.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../src/ABOUT/Nicholas.png" />
+              <div class="item-desc">
+                <p><b>Nicholas Houghton</b></p>
+                <p>Co-Founder</p>
+                <p class="item-email">
+                  <span>Creative Director</span> 
+                  <a href="mailto:nicholas@sanguineagency.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../src/ABOUT/Laura.png" />
+              <div class="item-desc">
+                <p><b>Laura Weston</b></p>
+                <p class="item-email">
+                  <span>Behavioural Specialist-Quantitative</span> 
+                  <a href="mailto:laura@sanguineagency.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../src/ABOUT/Alex.png" />
+              <div class="item-desc">
+                <p><b>Alex Alampour</b></p>
+                <p class="item-email">
+                  <span>Senior Software Developer</span> 
+                  <a href="mailto:alex@sanguineagency.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../src/ABOUT/Alexandre.png" />
+              <div class="item-desc">
+                <p><b>Alexandre Andre</b></p>
+                <p class="item-email">
+                  <span>Senior Software Developer</span> 
+                  <a href="mailto:alexandre@sanguineagency.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              var owl = $(".owl-carousel");
+              owl.owlCarousel({
+                stagePadding: 150,
+                margin: 0,
+                nav: false,
+                loop: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                URLhashListener: true,
+                startPosition: "5",
+                responsive: {
+                  0: {
+                    items: 2,
+                  },
+                  100: {
+                    items: 2,
+                  },
+                  200: {
+                    items: 2,
+                  },
+                  300: {
+                    items: 2,
+                  },
+                  400: {
+                    items: 2,
+                  },
+                  500: {
+                    items: 2,
+                  },
+                  700: {
+                    items: 2,
+                  },
+                  800: {
+                    items: 3,
+                  },
+                  1000: {
+                    items: 3,
+                  },
+                  1200: {
+                    items: 4,
+                  },
+                },
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <div class="text_body">
+      <div class="title_project">
+        <a1 id="name">Meet the team</a1>
+        <p1 id="ti"></p1>
+        <p1 id="ti2"></p1>
+      </div>
+      <div id="desc" class="descraption">
+        <p></p>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("test").style.height = "100vh";
+        document.getElementById("test").style.marginTop = "0";
+      }
+    </script>
+    <script src="../assets/vendors/highlight.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
