@@ -67,6 +67,37 @@
         color: gray;
       }
 
+      .desc-panel {
+        margin: 10px 20px;
+      }
+
+      .desc-panel p {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: justify;
+      }
+
+      .owl-stage-outer {
+        z-index: 10;
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+      }
+
+      .owl-nav button {
+        z-index: 20;
+        font-size: 50px !important;
+        color: white !important;
+      }
+
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -250,6 +281,7 @@
             </div>
           </div>
           
+          
 
           <script>
             $(document).ready(function () {
@@ -257,13 +289,13 @@
               owl.owlCarousel({
                 stagePadding: 0,
                 margin: 0,
-                nav: false,
                 loop: true,
+                nav: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 URLhashListener: true,
-                startPosition: "0",
+                responsiveClass: true,
                 responsive: {
                   0: {
                     items: 2,
@@ -302,16 +334,12 @@
         </div>
       </div>
     </section>
-
-    <div class="text_body">
-      <div class="title_project">
-        <a1 id="name">Meet the team</a1>
-        <p1 id="ti"></p1>
-        <p1 id="ti2"></p1>
-      </div>
-      <div id="desc" class="descraption">
-        <p></p>
-      </div>
+    <div class="desc-panel">
+      <a1 id="name">Meet the team</a1>
+      <p>
+        Sanguine is a London-based full service advertising agency that was founded to draw attention to the meaningful and revolutionary work of healthcare organisations around the world. Because we believe the companies and individuals truly deserving of humanity’s attention are those committed to helping it.
+        Our team comprises award-winning advertisers, marketers and communications specialists.  We have strategized, conceived and executed campaigns for global mega brands, which have been featured in over 30 markets. Harnessing our collective advertising experience and expertise we empower healthcare organisations to communicate more creatively, intelligently and effectively so that they are in an even stronger position to make a salient difference to people’s lives.
+      </p>
     </div>
 
     <script>
