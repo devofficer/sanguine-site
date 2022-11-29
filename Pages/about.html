@@ -22,6 +22,37 @@
         #about {
             padding-top: 20px;
         }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+
+        .banner .container {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .banner .container h1 {
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .logo-container img {
+            height: 10vh;
+            margin: 10px 20px;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +65,18 @@
             <li><a style="font-weight:bold ;" href="../Pages/about.html">ABOUT</a></li>
         </ul>
     </nav>
-    <img class="banner" src="../src/ABOUT/About.png">
+    <div class="banner">
+        <div class="container">
+            <h1>Sanguine is proud to provide advertising consultancy to an array of world-leading healthcare organisations.</h1>
+            <div class="logo-container">
+                <img src="../src/ABOUT/organizations/roche.png" />
+                <img src="../src/ABOUT/organizations/gsk.png" />
+                <img src="../src/ABOUT/organizations/ucb.png" />
+                <img src="../src/ABOUT/organizations/galderma.png" />
+                <img src="../src/ABOUT/organizations/alcon.png" />
+            </div>
+        </div>
+    </div>
     <div class="text_body" style="margin-top: 5px;">
         <div class="title_project" style="width: 150vw;margin-top: 1.5%;">
             <a1 style="line-height: 6vh;font-weight: bold;font-size: 32px;">Get in touch</a1>
