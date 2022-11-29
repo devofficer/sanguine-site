@@ -68,7 +68,7 @@
       }
 
       #name {
-        min-width: 50%;
+        flex: 1;
         font-size: 35px;
         line-height: 35px;
         padding: 10px;
@@ -76,9 +76,13 @@
 
       .desc-panel {
         display: flex;
+        flex-wrap: wrap;
         margin: 10px 20px;
       }
 
+      .desc-panel div {
+        flex: 1;
+      }
 
       .desc-panel p {
         padding: 5px;
