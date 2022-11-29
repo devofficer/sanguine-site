@@ -53,6 +53,30 @@
             height: 10vh;
             margin: 10px 20px;
         }
+
+        .desc-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .desc-container div {
+            flex: 1;
+        }
+
+        .service-desc {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .service-desc .panel {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .desc-item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -77,14 +101,36 @@
             </div>
         </div>
     </div>
-    <div class="text_body" style="margin-top: 5px;">
+    <div class="desc-container" style="margin-top: 5px;">
         <div class="title_project" style="width: 150vw;margin-top: 1.5%;">
-            <a1 style="line-height: 6vh;font-weight: bold;font-size: 32px;">Get in touch</a1>
-            <p1><i class="fa fa-envelope-o" aria-hidden="true"></i> info@sanguineagency.com</p1>
+            <a1 style="line-height: 36px; font-size: 32px;">We are a full-service healthcare advertising agency</a1>
+            <p1 style="padding-top: 20px; font-size: 20px"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@sanguineagency.com</p1>
         </div>
-        <div id="about" class="descraption">
-            <p style="padding-bottom: 10px ; font-size:15px;">Sanguine is a London-based full service advertising agency that was founded to draw attention to the meaningful and revolutionary work of healthcare organisations around the world. Because we believe the companies and individuals truly deserving of humanity’s attention are those committed to helping it.</p>
-            <p style="padding-bottom: 10px ; font-size:15px;">Our team comprises award-winning advertisers, marketers and communications specialists.  We have strategized, conceived and executed campaigns for global mega brands, which have been featured in over 30 markets. Harnessing our collective advertising experience and expertise we empower healthcare organisations to communicate more creatively, intelligently and effectively so that they are in an even stronger position to make a salient difference to people’s lives.</p>
+        <div class="service-desc">
+            <div class="panel">
+                <div class="desc-item">
+                    <p><b>INVESTOR FILMS</b></p>
+                    <p>We produce short hype films to electrify potential and current investors</p>
+                </div>
+                <div class="desc-item">
+                    <p><b>WEB DESIGN & DEVELOPMENT</b></p>
+                    <p>We design and build elegant, dynamic and technologically advanced websites</p>
+                </div>
+                <div class="desc-item">
+                    <p><b>CREATIVE ADVERTISING</b></p>
+                    <p>We conceive and execute 360 advertising campaigns for all media channels </p>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="desc-item">
+                    <p><b>PR CONSULTANCY</b></p>
+                    <p>We deliver strategies to increase brand awareness and generate brand talkability </p>
+                </div>
+                <div class="desc-item">
+                    <p><b>BRAND DEVELOPMENT</b></p>
+                    <p>We create cohesive brand identities with bespoke logos and personalized tone of voice guidelines </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
