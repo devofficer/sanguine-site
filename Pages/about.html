@@ -102,6 +102,43 @@
         font-size: 30px;
         line-height: 32px;
       }
+
+      .appear {
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;
+      }
+
+      @keyframes example {
+        0% {
+          left: 1000px;
+          opacity: 0;
+        }
+        100% {
+          left: 0px;
+          opacity: 1;
+        }
+      }
+
+      .roche {
+        animation-delay: 0;
+      }
+
+      .gsk {
+        animation-delay: 250ms;
+      }
+
+      .ucb {
+        animation-delay: 500ms;
+      }
+
+      .galderma {
+        animation-delay: 750ms;
+      }
+
+      .alcon {
+        animation-delay: 1s;
+      }
     </style>
   </head>
   <body>
@@ -110,12 +147,15 @@
       <ul>
         <li><a href="../index.html">HOME</a></li>
         <li><a href="../Work/work.html">WORK</a></li>
-        <li><a href="../Pages/Team.html">TEAM</a></li>
+        <li><a href="../Pages/Team.html">ABOUT US</a></li>
         <li>
-          <a style="font-weight: bold" href="../Pages/about.html">ABOUT</a>
+          <a style="font-weight: bold" href="../Pages/about.html">
+            OUR SERVICES
+          </a>
         </li>
       </ul>
     </nav>
+    <div class="pa"></div>
     <div class="banner">
       <div class="container">
         <p>
@@ -123,11 +163,20 @@
           world-leading healthcare organisations.
         </p>
         <div class="logo-container">
-          <img src="../src/ABOUT/organizations/roche.png" />
-          <img src="../src/ABOUT/organizations/gsk.png" />
-          <img src="../src/ABOUT/organizations/ucb.png" />
-          <img src="../src/ABOUT/organizations/galderma.png" />
-          <img src="../src/ABOUT/organizations/alcon.png" />
+          <img
+            class="appear roche"
+            src="../src/ABOUT/organizations/roche.png"
+          />
+          <img class="appear gsk" src="../src/ABOUT/organizations/gsk.png" />
+          <img class="appear ucb" src="../src/ABOUT/organizations/ucb.png" />
+          <img
+            class="appear galderma"
+            src="../src/ABOUT/organizations/galderma.png"
+          />
+          <img
+            class="appear alcon"
+            src="../src/ABOUT/organizations/alcon.png"
+          />
         </div>
       </div>
       <div class="blank"></div>
@@ -181,8 +230,8 @@
           <div class="desc-item">
             <p><b>BRAND DEVELOPMENT</b></p>
             <p>
-              We create logos, brand manifestos, and brand tone of voice
-              guidelines
+              We devise brand toolkits, comprising a logo, a manifesto, and tone
+              of voice guidelines.
             </p>
           </div>
           <div class="desc-item">
