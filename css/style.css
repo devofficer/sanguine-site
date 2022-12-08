@@ -59,6 +59,11 @@ nav ul li a:hover {
   }
 }
 
+.back-video {
+  position: fixed;
+  left: 0;
+}
+
 .sub-video {
   display: block;
   position: absolute;
