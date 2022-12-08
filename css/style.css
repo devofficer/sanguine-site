@@ -45,23 +45,20 @@ nav ul li a:hover {
 
 @media screen and (max-width: 0px) {
   .back-video {
-    z-index: -1;
-    height: 100vh;
-    max-width: none;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .back-video {
-    z-index: -1;
-    width: 100vw;
-    max-width: none;
   }
 }
 
 .back-video {
+  z-index: -1;
   position: fixed;
   left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .sub-video {
