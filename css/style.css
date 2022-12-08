@@ -56,7 +56,7 @@ nav ul li a:hover {
 .back-video {
   z-index: -1;
   position: absolute;
-  --ratio: calc( 16 / 9);
+  --ratio: calc( 1920 / 1024);
   --h: max(calc(100vw / var(--ratio)), 100vh);
   height: var(--h);
   width: calc(var(--h) * var(--ratio));
