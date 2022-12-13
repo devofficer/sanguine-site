@@ -27,6 +27,8 @@
       />
     <meta property="og:image:width" content="540" />
     <meta property="og:image:height" content="405" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- <script type="text/javascript" async
       src="https://play.vidyard.com/embed/v4.js"></script> -->
   </head>
@@ -39,8 +41,7 @@
         loop
         muted
         plays-inline
-        poster="../src/2.JPG"
-        autoplay></video>
+        poster="../src/2.JPG"></video>
       <!-- <img
         style="width: 100%; margin: auto; display: block;"
         class="vidyard-player-embed video sub-video"
@@ -52,5 +53,11 @@
         loop="1"
         /> -->
     </div>
+    <script>
+      $(document).ready(function(){
+        $("video")[0].play();
+        $("video").attr('loop','loop');
+      })
+    </script>
   </body>
 </html>

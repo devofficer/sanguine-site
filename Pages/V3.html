@@ -27,6 +27,8 @@
       />
     <meta property="og:image:width" content="540" />
     <meta property="og:image:height" content="405" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -37,8 +39,13 @@
         loop
         muted
         plays-inline
-        poster="../src/3.JPG"
-        autoplay></video>
+        poster="../src/3.JPG"></video>
     </div>
+    <script>
+      $(document).ready(function(){
+        $("video")[0].play();
+        $("video").attr('loop','loop');
+      })
+    </script>
   </body>
 </html>
